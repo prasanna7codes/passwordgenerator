@@ -17,7 +17,7 @@ export default function App() {
   const [isPassGenerated,setIsPassGenerated]=useState(false);
 
   const [lowerCase,setlowerCase]=useState(false);
-  const [upperCase,setUpperCase]=useState(false);
+  const [upperCase,setupperCase]=useState(false);
   const [numbers,setNumbers]=useState(false);
   const [symbols,setSymbols]=useState(false);
 
@@ -60,7 +60,12 @@ export default function App() {
   }
 
   const resetPassword=()=>{
-    //
+    setPassword('')
+    setIsPassGenerated(false)
+    setlowerCase(true)
+    setupperCase(false)
+    setNumbers(false)
+    setSymbols(false)
   }
 
   return (
